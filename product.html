@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>shopy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/normalize.css" media="all">
+	<link rel="stylesheet" href="css/style.css" media="all">
+</head>
+<body>
+	<div class="wrapper product">
+		<header>
+			<div class="header_top">
+				<div class="container">
+					<div class="wrap_social">
+						<ul class="contact">
+							<li><span class="icon-mail-envelope-closed"></span><a href="#">info@shopy.com</a></li>
+							<li><span class="icon-phone"></span><a href="#">996 - 5553 - 453</a></li>
+						</ul>
+						<ul class="social">
+							<li><a href="#" class="icon-facebook"></a></li>
+							<li><a href="#" class="icon-twitter"></a></li>
+							<li><a href="#" class="icon-google"></a></li>
+							<li><a href="#" class="icon-instagram2"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header_body">
+				<div class="container">
+					<div class="wrap_nav">
+						<div class="navbar_box">
+							<a href="index.html" class="logo">
+								<img src="img/logo.png" alt="">
+							</a>
+							<ul class="nav">
+								<li><a href="index.html">Home</a></li>
+								<li class="active"><a href="#">Product</a></li>
+								<li><a href="#">Hot Deals</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+						<div class="search_box">
+							<div class="form_contact">
+								<form action="#">
+									<div class="row">
+										<input type="text" class="holder_search">
+									</div>
+									<div class="box_submit icon-search">
+										<input type="submit" value="">
+									</div>
+								</form>
+							</div>
+							<ul class="search">
+								<li><a href="#" class="icon-man"></a></li>
+								<li><a href="#" class="icon-busket">
+								</a></li>
+							</ul>
+							<div class="btn_menu">
+								<span class="devide"></span>
+								<span class="devide"></span>
+								<span class="devide"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main clearfix">
+			<div class="container">
+				<div class="wrap_main">
+					<div class="sidebar">
+						<div class="section">
+							<div class="box_sidebar_row">
+								<div class="row categories">
+									<h4>Categories</h4>
+									<ul class="items">
+										<li><a href="#">Man</a></li>
+										<li><a href="#">Women</a></li>
+										<li><a href="#">Childrens</a></li>
+										<li><a href="#">Hot Deals</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="box_sidebar_row">
+								<div class="row filtter">
+									<h4>Price Filtter</h4>
+									<div>
+	  									<input type="text" id="amount_3" readonly style="border:0; color:#34404b; ">
+	  									<input type="text" id="amount_4" readonly style="border:0; color:#34404b; ">
+									</div>
+									<div id="slider-range"></div>
+									<p>
+									<label for="amount">From</label>
+	  									<input type="text" id="amount">
+	  								<label for="amount_1">To</label>
+	  									<input type="text" id="amount_1">
+									</p>
+								</div>
+							</div>
+							<div class="box_sidebar_row">
+								<div class="row sizes">
+									<h4>Sizes</h4>
+									<form action="#">
+										<div class="box_check">
+											<input type="checkbox" class="sel_input" id="sel_input1" checked>
+											<label for="sel_input1">Small</label>
+										</div>
+										<div class="box_check">
+											<input type="checkbox" class="sel_input" id="sel_input2">
+											<label for="sel_input2">Midum</label>
+										</div>
+										<div class="box_check">
+											<input type="checkbox" class="sel_input" id="sel_input3">
+											<label for="sel_input3">Larg</label>
+										</div>
+										<div class="box_check">
+											<input type="checkbox" class="sel_input" id="sel_input4">
+											<label for="sel_input4">X Larg</label>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="box_sidebar_row">
+								<div class="row brands">
+									<h4>Brands</h4>
+									<form action="#">
+										<div class="box_check">
+											<input type="checkbox" class="sel_input" id="sel_input5" checked>
+											<label for="sel_input5">Reebok</label>
+										</div>
+										<div class="box_check">
+											<input type="checkbox" class="sel_input" id="sel_input6">
+											<label for="sel_input6">Addidas</label>
+										</div>
+										<div class="box_check">
+											<input type="checkbox" class="sel_input" id="sel_input7">
+											<label for="sel_input7">Nike</label>
+										</div>
+										<div class="box_check">
+											<input type="checkbox" class="sel_input" id="sel_input8">
+											<label for="sel_input8">Active</label>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content">
+						<div class="section arrivals">
+							<div class="mid_section">
+								<div class="row">
+									<div class="cards">
+										<div class="card_img">
+											<img src="img/arrival2.png" alt="">
+										</div>
+										<div class="card_title">Reebok Track Jacket</div>
+										<div class="card_price">100$</div>
+										<div class="card_hover">
+											<div class="card_hover_top">
+												<a href="product_show.html">
+													<img src="img/arrival2.png" alt="">
+												</a>
+											</div>
+											<div class="card_hover_mid">
+												<div class="brand">Reebok Track Jacket</div>
+												<div class="size">sizes    :    s - m - l - xl</div>
+												<div class="color">
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+											</div>
+											<div class="card_hover_bot">
+												<ul class="card_hover_list_icon">
+													<li><a href="#" class="icon-glob"></a></li>
+													<li><a href="#" class="icon-cart"></a></li>
+													<li><a href="#" class="icon-heart"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cards">
+										<div class="card_img">
+											<img src="img/arrival1.png" alt="">
+										</div>
+										<div class="card_title">Reebok Track Jacket</div>
+										<div class="card_price">100$</div>
+										<div class="card_hover">
+											<div class="card_hover_top">
+												<a href="product_show.html">
+													<img src="img/arrival1.png" alt="">
+												</a>
+											</div>
+											<div class="card_hover_mid">
+												<div class="brand">Reebok Track Jacket</div>
+												<div class="size">sizes    :    s - m - l - xl</div>
+												<div class="color">
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+											</div>
+											<div class="card_hover_bot">
+												<ul class="card_hover_list_icon">
+													<li><a href="#" class="icon-glob"></a></li>
+													<li><a href="#" class="icon-cart"></a></li>
+													<li><a href="#" class="icon-heart"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cards">
+										<div class="card_img">
+											<img src="img/arrival3.png" alt="">
+										</div>
+										<div class="card_title">Reebok Track Jacket</div>
+										<div class="card_price">100$</div>
+										<div class="card_hover">
+											<div class="card_hover_top">
+												<a href="product_show.html">
+													<img src="img/arrival3.png" alt="">
+												</a>
+											</div>
+											<div class="card_hover_mid">
+												<div class="brand">Reebok Track Jacket</div>
+												<div class="size">sizes    :    s - m - l - xl</div>
+												<div class="color">
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+											</div>
+											<div class="card_hover_bot">
+												<ul class="card_hover_list_icon">
+													<li><a href="#" class="icon-glob"></a></li>
+													<li><a href="#" class="icon-cart"></a></li>
+													<li><a href="#" class="icon-heart"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cards">
+										<div class="card_img">
+											<img src="img/arrival2.png" alt="">
+										</div>
+										<div class="card_title">Reebok Track Jacket</div>
+										<div class="card_price">100$</div>
+										<div class="card_hover">
+											<div class="card_hover_top">
+												<a href="product_show.html">
+													<img src="img/arrival2.png" alt="">
+												</a>
+											</div>
+											<div class="card_hover_mid">
+												<div class="brand">Reebok Track Jacket</div>
+												<div class="size">sizes    :    s - m - l - xl</div>
+												<div class="color">
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+											</div>
+											<div class="card_hover_bot">
+												<ul class="card_hover_list_icon">
+													<li><a href="#" class="icon-glob"></a></li>
+													<li><a href="#" class="icon-cart"></a></li>
+													<li><a href="#" class="icon-heart"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cards">
+										<div class="card_img">
+											<img src="img/arrival1.png" alt="">
+										</div>
+										<div class="card_title">Reebok Track Jacket</div>
+										<div class="card_price">100$</div>
+										<div class="card_hover">
+											<div class="card_hover_top">
+												<a href="product_show.html">
+													<img src="img/arrival1.png" alt="">
+												</a>
+											</div>
+											<div class="card_hover_mid">
+												<div class="brand">Reebok Track Jacket</div>
+												<div class="size">sizes    :    s - m - l - xl</div>
+												<div class="color">
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+											</div>
+											<div class="card_hover_bot">
+												<ul class="card_hover_list_icon">
+													<li><a href="#" class="icon-glob"></a></li>
+													<li><a href="#" class="icon-cart"></a></li>
+													<li><a href="#" class="icon-heart"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cards">
+										<div class="card_img">
+											<img src="img/arrival3.png" alt="">
+										</div>
+										<div class="card_title">Reebok Track Jacket</div>
+										<div class="card_price">100$</div>
+										<div class="card_hover">
+											<div class="card_hover_top">
+												<a href="product_show.html">
+													<img src="img/arrival3.png" alt="">
+												</a>
+											</div>
+											<div class="card_hover_mid">
+												<div class="brand">Reebok Track Jacket</div>
+												<div class="size">sizes    :    s - m - l - xl</div>
+												<div class="color">
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+											</div>
+											<div class="card_hover_bot">
+												<ul class="card_hover_list_icon">
+													<li><a href="#" class="icon-glob"></a></li>
+													<li><a href="#" class="icon-cart"></a></li>
+													<li><a href="#" class="icon-heart"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cards">
+										<div class="card_img">
+											<img src="img/arrival2.png" alt="">
+										</div>
+										<div class="card_title">Reebok Track Jacket</div>
+										<div class="card_price">100$</div>
+										<div class="card_hover">
+											<div class="card_hover_top">
+												<a href="product_show.html">
+													<img src="img/arrival2.png" alt="">
+												</a>
+											</div>
+											<div class="card_hover_mid">
+												<div class="brand">Reebok Track Jacket</div>
+												<div class="size">sizes    :    s - m - l - xl</div>
+												<div class="color">
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+											</div>
+											<div class="card_hover_bot">
+												<ul class="card_hover_list_icon">
+													<li><a href="#" class="icon-glob"></a></li>
+													<li><a href="#" class="icon-cart"></a></li>
+													<li><a href="#" class="icon-heart"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cards">
+										<div class="card_img">
+											<img src="img/arrival1.png" alt="">
+										</div>
+										<div class="card_title">Reebok Track Jacket</div>
+										<div class="card_price">100$</div>
+										<div class="card_hover">
+											<div class="card_hover_top">
+												<a href="product_show.html">
+													<img src="img/arrival1.png" alt="">
+												</a>
+											</div>
+											<div class="card_hover_mid">
+												<div class="brand">Reebok Track Jacket</div>
+												<div class="size">sizes    :    s - m - l - xl</div>
+												<div class="color">
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+											</div>
+											<div class="card_hover_bot">
+												<ul class="card_hover_list_icon">
+													<li><a href="#" class="icon-glob"></a></li>
+													<li><a href="#" class="icon-cart"></a></li>
+													<li><a href="#" class="icon-heart"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cards">
+										<div class="card_img">
+											<img src="img/arrival3.png" alt="">
+										</div>
+										<div class="card_title">Reebok Track Jacket</div>
+										<div class="card_price">100$</div>
+										<div class="card_hover">
+											<div class="card_hover_top">
+												<a href="product_show.html">
+													<img src="img/arrival3.png" alt="">
+												</a>
+											</div>
+											<div class="card_hover_mid">
+												<div class="brand">Reebok Track Jacket</div>
+												<div class="size">sizes    :    s - m - l - xl</div>
+												<div class="color">
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+											</div>
+											<div class="card_hover_bot">
+												<ul class="card_hover_list_icon">
+													<li><a href="#" class="icon-glob"></a></li>
+													<li><a href="#" class="icon-cart"></a></li>
+													<li><a href="#" class="icon-heart"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a href="#" class="ajax_block">
+									<span></span>
+									<span></span>
+									<span></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section sales">
+				<div class="container">
+					<div class="bot_section">
+						<div class="box_news_letter">
+							<div class="col_left">
+								<div class="news_title">News letter</div>
+								<p>join us now to get all news and special offers</p>
+							</div>
+							<div class="col_right">
+								<form action="#">
+									<div class="wrap_form">
+										<div class="block block_mail">
+											<input type="text" placeholder="type your email here">
+										</div>
+										<div class="block">
+											<button type="submit" class="btn" value="join">join us</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="footer_wrap">
+					<div class="footer_left">
+						<a href="index.html" class="logo">
+							<img src="img/logo.png" alt="">
+						</a>
+						<div class="copy">
+							<p>shopy c 2015 . your copy right here</p>
+						</div>
+					</div>
+					<ul class="footer_list">
+						<li><a href="#">about us</a></li>
+						<li><a href="#">contact us</a></li>
+						<li><a href="#">support</a></li>
+					</ul>
+					<ul class="footer_list">
+						<li><a href="#">our feed</a></li>
+						<li><a href="#">terms and conditions</a></li>
+						<li><a href="#">our privacy</a></li>
+					</ul>
+					<ul class="footer_list">
+						<li><a href="#">join us</a></li>
+						<li><a href="#">live support</a></li>
+					</ul>
+					<div class="payment">
+						<div class="title">Payment Method</div>
+						<ul class="pay">
+							<li><a href="#">
+								<img src="img/pay1.png" alt="">
+							</a></li>
+							<li><a href="#">
+								<img src="img/pay2.png" alt="">
+							</a></li>
+							<li><a href="#">
+								<img src="img/pay3.png" alt="">
+							</a></li>
+							<li><a href="#">
+								<img src="img/pay4.png" alt="">
+							</a></li>
+							<li><a href="#">
+								<img src="img/pay5.png" alt="">
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/icheck.js"></script>	
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
